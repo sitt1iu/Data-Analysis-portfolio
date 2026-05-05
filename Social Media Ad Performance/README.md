@@ -4,8 +4,7 @@
 
 This analysis is aimed to examine how advertisements on social media perform, and identify the patterns if there's any. We wanted to apply funnel analysis on users based on their activities, and analyze campaign performances based on CTR (Click-Through Rate), CVR (Conversion Rate) and other metrics. 
 
-This dataset is sourced from Kaggle: *Social Media Advertisement Performance* by Alperen Atik.  (https://www.kaggle.com/datasets/alperenmyung/social-media-advertisement-performance)
-
+This dataset is sourced from Kaggle: *Social Media Advertisement Performance* by Alperen Atik.  (https://www.kaggle.com/datasets/alperenmyung/social-media-advertisement-performance) The dataset is sourced from a SQLite file, which is not included in this repository due to file size limitations. It can be downloaded from the link provided here. For convenience, the data is also available in CSV format in this folder.
 ## Insights
 
 This analysis examined social media ad performance across four dimensions: conversion funnel, campaign metrics, user demographics, and temporal patterns. Key findings are as follows:
