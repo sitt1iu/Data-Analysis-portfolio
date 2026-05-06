@@ -1,11 +1,28 @@
 # Social Media Ad Performance Analysis
 
-## Intro and Data Source
+## Intro
 
-This analysis is aimed to examine how advertisements on social media perform, and identify the patterns if there's any. We wanted to apply funnel analysis on users based on their activities, and analyze campaign performances based on CTR (Click-Through Rate), CVR (Conversion Rate) and other metrics. 
+### Background 
 
-This dataset is sourced from Kaggle: *Social Media Advertisement Performance* by Alperen Atik.  (https://www.kaggle.com/datasets/alperenmyung/social-media-advertisement-performance) The dataset is sourced from a SQLite file, which is not included in this repository due to file size limitations. It can be downloaded from the link provided here. For convenience, the data is also available in CSV format in this folder.
-## Insights
+As e-commerce becomes increasingly competitive, businesses are investing more heavily in social media advertising to attract user attention and drive engagement. Users exposed to these ads may interact through clicks, likes, comments, and shares, with the ultimate goal of converting into purchases. Given this context, it is important to evaluate the effectiveness of different campaigns, identify high-performing ones, and understand the key factors driving their success.
+
+### Objective
+
+We aimed to evaluate ad campaign performance and identify key drivers of conversion and ROI. We wanted to apply funnel analysis on users based on their activities, and analyze campaign performances based on CTR (Click-Through Rate), CVR (Conversion Rate), ROI (Return On Investment) and other metrics. 
+
+## Data Overview
+
+This dataset is sourced from Kaggle: *Social Media Advertisement Performance* by Alperen Atik. 
+(https://www.kaggle.com/datasets/alperenmyung/social-media-advertisement-performance)
+
+The data is synthetic, and the core of this dataset is a relational database modeled around four key entities:
+
+- **Users**: Detailed individual profiles, including age, gender, country, location, and interests, allowing for granular demographic analysis and segmentation.
+- **Campaigns**: High-level campaign data, including budget, duration, and start/end dates, providing the strategic context for all ad-related activities.
+- **Ads**: Specific creative assets tied to campaigns, complete with targeting parameters for age, gender, and interests.
+- **Ad Events**: The central transactional log, capturing every user interaction from a simple impression to a final purchase — the key to understanding the full conversion funnel.
+
+## Key Insights
 
 This analysis examined social media ad performance across four dimensions: conversion funnel, campaign metrics, user demographics, and temporal patterns. Key findings are as follows:
 
@@ -26,3 +43,10 @@ Day-of-week patterns show more variation than time-of-day patterns. Purchases an
 
 **Limitations**: This dataset is entirely synthetic, which means the patterns observed may not reflect real-world advertising dynamics. Statistical tests (e.g., t-tests, chi-square) were not conducted, so findings should be treated as exploratory rather than conclusive.
 
+## Recommendations
+
+- The relatively low conversion rate from click to purchase suggests that the landing page and post-click experience require further optimization. Efforts should focus on improving user journey, clarity, and purchase friction.
+
+- Platform and demographic factors do not appear to be primary drivers of performance. However, certain markets—such as Japan and Mexico—show relatively higher CVR, indicating potential opportunities for targeted investment and localized strategies.
+
+- User behavior suggests stronger engagement and conversion later in the week. Campaigns should be strategically scheduled on Thursdays and Fridays, when users are more likely to click and convert.
